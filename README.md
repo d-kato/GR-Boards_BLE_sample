@@ -14,12 +14,12 @@ The following targets have been tested and work with these examples:
 
 - [GR-LYCHEE](https://os.mbed.com/platforms/Renesas-GR-LYCHEE/) (RZ/A1LU)  
   - It is equipped with ESP32.  
-    Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
+    Please update ESP32 FW ``AT version:2.0.0.0`` or later.  
 
 
 - [GR-PEACH](https://os.mbed.com/platforms/Renesas-GR-PEACH/)  (RZ/A1H)
   - [GR-PEACH Wireless CAMERA Shield](https://www.core.co.jp/product/m2m/gr-peach/audio-camera.html)  
-    Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
+    Please update ESP32 FW ``AT version:2.0.0.0`` or later.  
 
 
 The sample application can be seen on any BLE scanner on a smartphone. If you don't have a scanner on your phone, please install:
@@ -29,7 +29,7 @@ The sample application can be seen on any BLE scanner on a smartphone. If you do
 - [LightBlue](https://itunes.apple.com/gb/app/lightblue-bluetooth-low-energy/id557428110?mt=8) for iPhone.
 
 
-## How to update ESP32 firmware to "AT version:1.1.3.0"
+## How to update ESP32 firmware
 Please refer to the following.  
 https://github.com/d-kato/esp32-at-ble-stack
 
