@@ -1,0 +1,41 @@
+{
+    "config": {
+        "ble_button_pin_name": {
+            "help": "The pin name used as button in this application",
+            "macro_name": "BLE_BUTTON_PIN_NAME",
+            "required": true
+        },
+        "camera":{
+            "help": "0:disable 1:enable",
+            "value": "0"
+        },
+        "camera-type":{
+            "help": "Please see EasyAttach_CameraAndLCD/README.md",
+            "value": null
+        },
+        "lcd":{
+            "help": "0:disable 1:enable",
+            "value": "0"
+        },
+        "lcd-type":{
+            "help": "Please see EasyAttach_CameraAndLCD/README.md",
+            "value": null
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-convert-newlines": true,
+            "target.macros_add": ["MBED_CONF_APP_MAIN_STACK_SIZE=8192"],
+            "ble_button_pin_name": "USER_BUTTON0"
+        },
+        "RZ_A1H": {
+            "target.features_add"    : ["BLE"],
+            "target.extra_labels_add": ["ESP32AT_BLE"]
+        },
+        "GR_LYCHEE": {
+            "target.features_add"    : ["BLE"],
+            "target.extra_labels_add": ["ESP32AT_BLE"]
+        }
+    }
+}
